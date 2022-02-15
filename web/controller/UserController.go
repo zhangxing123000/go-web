@@ -8,6 +8,7 @@ import (
 	"web/model"
 )
 
+//Register  注册用户
 func Register(context *gin.Context) {
 	db := common.GetDB()
 	name := context.PostForm("name")
